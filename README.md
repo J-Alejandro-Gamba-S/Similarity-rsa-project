@@ -1,6 +1,6 @@
 # Similarity Judgments & RSA Analysis Project
 
-This repository contains all analysis scripts and resources for a project investigating similarity judgments across multiple properties, using representational similarity analysis (RSA) on behavioral, neural, and CNN-derived data. The analysis evaluates which properties correlate with specific cortical brain regions and explores the conditions required for algorithmic and CNN-based similarity to align with behavior and fMRI. The project also examines different correlation metrics and methods, and proposes methodological improvements for estimating and visualizing noise ceilings in multi-modal RSA.
+This repository contains the full analysis pipeline and code for the project investigating similarity judgments across multiple dimensions using representational similarity analysis (RSA). The project integrates behavioral, neural (fMRI), and CNN-derived dissimilarity matrices to evaluate cross-modal relationships across similarity metrics, and proposes methodological advances in estimating and visualizing noise ceilings in multimodal RSA.
 
 ---
 
@@ -10,14 +10,14 @@ This repository contains all analysis scripts and resources for a project invest
 similarity_rsa_project/
 │
 ├── R/                          # R scripts
-│   ├── RSA_project_Phase_1_2_final.R
-│   └── RSA_project_Phase_3_final.R
+│   ├── RSA_project_Phase_1_2_final.R       # Analysis script for Phase 1 and 2 (behavioral)
+│   └── RSA_project_Phase_3_final.R         # Analysis script for Phase 3 (Bimodal and multimodal)
 │
 ├── Python/                     # Python analysis and neural network adaptation
-│   ├── RSA_CNN_project_analysis_final.py
-│   ├── image-similarity/      # Modified MobileNet-based repo for local image processing
-│   ├── RSA_english_images/    # English image set
-│   └── RSA_spanish_images/    # Spanish image set
+│   ├── RSA_CNN_project_analysis_final.py   # Analysis script
+│   ├── image-similarity/                   # Modified MobileNet-based repo for local image processing
+│   ├── RSA_english_images/                 # English image set
+│   └── RSA_spanish_images/                 # Spanish image set
 │
 ├── .gitignore
 └── README.md
@@ -52,13 +52,17 @@ Use `install.packages()` or load them directly in the R scripts.
 
 ## 📁 Data Availability
 
-The raw datasets and `.RData` workspaces are hosted on the [Open Science Framework (OSF)](https://osf.io/fkzuh/) due to GitHub’s file size limitations.
+The raw datasets, the workspace for script1, behavioral and neural matrices and `.RData` workspaces are hosted on the [Open Science Framework (OSF)](https://osf.io/fkzuh/) due to GitHub’s file size limitations. The second workspace (of analysis script phase 3 - 30Gb) has been omitted given the size limitations on open data repositories. 
 
 Available files:
-- `similarity_task_english.csv`
-- `similarity_task_spanish.csv`
-- `Workspace_RSA_analysis_Phase1_&_2_final.RData`
-- `phase_3_workspace_final.RData`
+- `similarity_task_english.csv`                     # raw dataset
+- `similarity_task_spanish.csv`                     # raw dataset
+- `Workspace_RSA_analysis_Phase1_&_2_final.RData`   # workspace for analysis script phase 1 and 2
+- `RSA_All_40by40.pkl`                              # Neural dataset for the 40x40 voxel-based RSA matrices across regions.
+- `RSA_All.pkl`                                     # Neural dataset for the 280x280 voxel-based RSA matrices across regions.
+- `l_final_matrices_280x280_2.rds`                  # Behavioral matrices - Exemplar matrices (280x280) - Outcome of analysis script phase 1 and 2.  
+- `l_final_matrices_40x40_2.rds`                    # Behavioral matrices - Category matrices (40x40) - Outcome of analysis script phase 3 and 4. 
+- `Supplementary materials`                          
 
 > 📌 Please download these manually to the appropriate folders before running the full analysis.
 
