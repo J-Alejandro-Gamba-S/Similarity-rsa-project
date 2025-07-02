@@ -75,7 +75,7 @@ This project builds upon and adapts multiple open-source tools and pre-trained m
 
 All model citations and methodological descriptions are detailed in the **main manuscript** and **supplementary materials**.
 
-Thanks to the PAC Lab at the University of Florida for their continued support and insightful feedback throughout the project.
+Thanks to the PAC (Perception, Attention, and Consciousness) Lab at the University of Florida for their continued support and insightful feedback throughout the project.
 
 ---
 
