@@ -47,5 +47,24 @@ You can use `install.packages()` or load them from a script.
 
 > 📌 To install Python dependencies:
 You can use `pip install -r requirements.txt`
-# 💡 Note: Some modules are custom modules located in the modified neural network folder. Please read the script analysis on the steps performed.  
+# 💡 Note: Some modules are custom modules located in the modified neural network folder. Please read the script analysis on the steps performed. 
+
+
+## 🙌 Acknowledgments ##
+
+* This project builds upon and adapts several open-source tools and models. We are grateful to the developers and communities maintaining these resources:
+
+- The folder `Python/image-similarity/` is adapted from the open-source repository [ryanfwy/image-similarity](https://github.com/ryanfwy/image-similarity), originally based on MobileNet (Howard et al., 2017). We modified it for local image processing and offline cosine similarity estimation.
+
+- For pretrained deep learning models, we used `MobileNet`, `ResNet-50`, and the Holistically-Nested Edge Detection (HED) network. These models were accessed via `torchvision` and custom implementations, and were either used as-is or fine-tuned for category, animacy, and shape-based classification tasks.
+
+- The Canny edge detector (Canny, 1986) and structural similarity index (SSIM) were employed to estimate shape-based similarity using classical computer vision techniques.
+
+- Color-based dissimilarity was computed using histogram distributions and clustering-based color extraction, relying on `OpenCV` and `scikit-learn`.
+
+- The ResNet-50 architecture was also fine-tuned for category and animacy classification. These models were trained using PyTorch, leveraging stratified splits, augmentation pipelines, and feature embedding extraction to generate similarity matrices.
+
+All source citations and methodological details are available in the main manuscript and supplementary materials accompanying the publication.
+
+We also thank the members of the PAC Lab at the University of Florida for their feedback and support throughout this project. 
 
