@@ -10,7 +10,7 @@ This repository contains all analysis scripts and resources for a project invest
 similarity_rsa_project/
 │
 ├── R/                          # R scripts
-│   ├── RSA project - phase 1_&_2_final.R
+│   ├── RSA_project_Phase_1_2_final.R
 │   └── RSA_project_Phase_3_final.R
 │
 ├── Python/                     # Python analysis and neural network adaptation
@@ -37,7 +37,7 @@ This project uses both **R** and **Python**. Below are the key packages used:
 
 - **Python (v3.10+)**
   - Libraries: `cv2`, `h5py`, `hashlib`, `matplotlib`, `numpy`, `os`, `pandas`, `random`, `seaborn`, `skimage`, `sklearn`, `sys`, `tensorflow`, `torch`, `torchvision`
-  - Plus custom modules in `image-similarity/` like `local_similarity`, `main_multi`, and `humans`
+  - Plus custom modules in `image-similarity/` like `local_similarity`, `main_multi` and `model_util`.
 
 > 💡 To install Python dependencies:
 ```bash
@@ -45,8 +45,9 @@ pip install -r requirements.txt
 ```
 
 > 💡 For R dependencies:
+```bash
 Use `install.packages()` or load them directly in the R scripts.
-
+```
 ---
 
 ## 📁 Data Availability
