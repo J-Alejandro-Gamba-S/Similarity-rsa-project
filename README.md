@@ -68,3 +68,10 @@ All source citations and methodological details are available in the main manusc
 
 We also thank the members of the PAC Lab at the University of Florida for their feedback and support throughout this project. 
 
+## 📄 License ##
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+If you use this code or dataset in your work, please cite the original paper as described in the main manuscript and supplementary materials.
+
+Note: The datasets provided (`data/similarity_task_english.csv`, `data/similarity_task_spanish.csv`) are shared for non-commercial academic use only. Please contact the author for reuse beyond this scope.
