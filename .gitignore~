@@ -1,0 +1,13 @@
+# R
+*.Rhistory
+*.RData
+*.Rproj.user/
+.Rproj.user/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / Misc
+.DS_Store
+Thumbs.db
